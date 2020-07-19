@@ -13,7 +13,7 @@ const index = async (request, response) => {
     try {
         const transaction = await TransactionModel.find({ yearMonth: period })
 
-        return response.json({ message: transaction })
+        return response.json({ data: transaction })
     } catch (error) {
         return response.json({ message: error.message })
     }
