@@ -31,7 +31,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
-  (err) => {
+  err => {
     if (err) {
       connectedToMongoDB = false;
       console.error(`Erro na conexão ao MongoDB - ${err}`);
